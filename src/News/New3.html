@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Noticias - Grupo Nouma</title>
+    <link rel="icon" type="image/x-icon" href="../FavIcon/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="../FavIcon/favicon.ico">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+    <body id="Inicio" class="font-[Poppins] flex flex-col">
+        <header class="bg-white overflow-hidden flex">
+            <nav class="bg-white fixed w-full z-10 top-0 start-0 border-b items-center">
+                <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4 h-28 gap-x-32 md:gap-x-48">
+                    <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="../LogoGrupoNouma.jpeg" class="w-max h-20 " alt="LogoNouma">
+                    </a>
+                    <div class="nav-links duration-500 absolute bg-white md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:top-[70%] md:w-auto  w-full flex items-center px-5 -mt-96 md:mt-0 md:left-[35%]">
+                        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 -mt-8 md:-mb-2">
+                            <li>
+                                <a class="hover:text-[#0079FF] duration-500" href="../index.html">Inicios</a>
+                            </li>
+                            <li>
+                                <a class="text-[#0079FF] duration-500" href="../News.html" target="_blank">Noticias</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-6">
+                        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="w-full h-auto z-0 md:grid md:grid-cols-5 mt-[7rem] bg-gradient-to-b from-[#4FC1E9] to-[#41B06E] py-10 px-10 gap-y-10">
+            <div class="col-span-4 md:border-r-4 border-green-700 space-y-10 bg-gray-300 rounded-r-lg rounded-l-lg border-l-4 border-l-[#0079FF]">
+                <div class="justify-center flex md:pl-36 pt-3 flex-col">
+                    <h1 class="md:text-6xl text-3xl text-black font-extrabold">IMPACTO EN EL COSTO DE FLETES DESDE ASIA HACIA VENEZUELA</h1>
+                    <div class="size-5"></div>
+                    <h3 class="text-black font-semibold">El aumento de los costos de flete
+                        marítimo desde China: Un desafío
+                        para la importación en Venezuela</h3>
+                </div>
+                <div class="grid xl:grid-cols-2 gap-y-10">   
+                    <div class="flex md:pl-10">
+                            <img class="rounded-lg md:max-h-svh h-auto w-auto" src="../imagenes/BUQUE.jpeg" alt="image description">
+                    </div>
+                    <div class="h-auto w-auto">  
+                        <article class="max-md:px-2 md:text-lg text-black text-justify md:mx-20">
+                            El comercio internacional se ha visto
+                            impactado significativamente en los
+                            últimos años por el alza en los precios
+                            del flete marítimo, especialmente en
+                            las rutas que conectan Asia con
+                            América Latina. En el caso de
+                            Venezuela, que depende en gran
+                            medida de las importaciones
+                            provenientes de China, este
+                            incremento ha generado un desafío
+                            adicional para la economía del país.
+                        </article>
+                        <div class="h-5"></div>
+                        <h2 class="max-md:px-2 md:text-lg text-black text-justify md:mx-20 font-semibold">¿A qué se debe este aumento?</h2>
+                        <div class="h-2"></div>
+                        <article class="max-md:px-2 md:text-lg text-black text-justify md:mx-20">
+                            Diversos factores han contribuido al
+                            aumento del costo del flete marítimo
+                            desde China, entre ellos:
+                            <div class="h-2"></div>
+                            <ul class="md:list-outside list-inside list-disc max-md:px-2 md:text-lg text-black text-justify md:mx-20">
+                                <li>
+                                    La pandemia de COVID-19: La pandemia generó disrupciones en las cadenas de suministro
+                                    globales, lo que provocó una escasez de contenedores y un aumento en la demanda de
+                                    servicios de transporte marítimo.
+                                </li>
+                                <li>
+                                    El aumento del precio del combustible: El petróleo, principal fuente de energía para los
+                                    barcos, ha experimentado un aumento significativo en su precio en los últimos meses, lo
+                                    que ha impactado directamente en los costos de transporte.
+                                </li>
+                            </ul>
+                        </article>                       
+                    </div>
+                </div>
+
+                <div class="md:px-10">
+                    <ul class="md:list-outside list-inside list-disc max-md:px-4 md:text-lg text-black text-justify md:mx-20">
+                        <li>
+                            La guerra en Ucrania: El conflicto en Ucrania ha generado mayor incertidumbre en el
+                            mercado marítimo internacional, lo que ha llevado a un aumento en las primas de seguros
+                            y otros costos asociados al transporte.
+                        </li>
+                    </ul>
+                    <div class="h-5"></div>
+                    <h2 class="max-md:px-2 md:text-lg text-black text-justify md:mx-20 font-semibold">
+                        ¿Cómo impacta esto a las importaciones en Venezuela?       
+                    </h2>
+                    <div class="h-2"></div>
+                        <article class="max-md:px-4 md:text-lg text-black text-justify md:mx-20">
+                        El aumento del costo del flete marítimo tiene un impacto directo en el precio final de los
+                        productos importados, lo que puede generar:
+                            <div class="h-2"></div>
+                            <ul class="md:list-outside list-inside list-disc max-md:px-4 md:text-lg text-black text-justify md:mx-20">
+                                <li>
+                                    Aumento en la inflación: Los consumidores venezolanos podrían enfrentar un aumento en
+                                    los precios de productos básicos y otros bienes importados.
+                                </li>
+                                <li>
+                                    Reducción de la competitividad de las empresas: Las empresas que dependen de las
+                                    importaciones para su producción podrían verse afectadas por el aumento de sus costos,
+                                    lo que podría reducir su competitividad en el mercado.
+                                </li>
+                                <li>
+                                    Dificultades para el acceso a productos: La escasez de contenedores y el aumento de los
+                                    precios podrían dificultar el acceso a ciertos productos importados, especialmente
+                                    aquellos de menor valor.
+                                </li>
+                            </ul>
+                        </article>
+                        <div class="h-5"></div>
+                        <h2 class="max-md:px-4 md:text-lg text-black text-justify md:mx-20 font-semibold">¿Qué se puede hacer para mitigar el impacto?</h2>
+                        <div class="h-2"></div>
+                        <article class="max-md:px-4 md:text-lg text-black text-justify md:mx-20">
+                            Existen algunas medidas que se podrían tomar para mitigar el impacto del aumento del costo del
+                            flete marítimo en las importaciones en Venezuela:
+                                <div class="h-2"></div>
+                                <ul class="md:list-outside list-inside list-disc max-md:px-4 md:text-lg text-black text-justify md:mx-20">
+                                    <li>
+                                        Diversificar las fuentes de importación: Buscar proveedores en otros países que no se
+                                        vean tan afectados por el aumento del flete marítimo.
+                                    </li>
+                                    <li>
+                                        Negociar mejores condiciones con las empresas de transporte marítimo: Las empresas
+                                        importadoras podrían negociar mejores tarifas con las empresas de transporte marítimo,
+                                        buscando volumen o utilizando rutas alternativas.
+                                    </li>
+                                    <li>
+                                        Aumentar la producción nacional: Fomentar la producción nacional de bienes que
+                                        actualmente se importan podría ayudar a reducir la dependencia de las importaciones y
+                                        disminuir el impacto del aumento del flete marítimo.
+                                    </li>
+                                </ul>
+                                <div class="h-5"></div>
+                                <div class="mb-5">
+                                    <p>
+                                        El aumento del costo del flete marítimo desde China es un desafío importante para la economía
+                                        venezolana. Sin embargo, existen medidas que se pueden tomar para mitigar su impacto y
+                                        proteger a los consumidores y las empresas. La diversificación de las fuentes de importación, la
+                                        negociación con las empresas de transporte marítimo y el fomento de la producción nacional
+                                        son algunas de las estrategias que podrían ayudar a enfrentar este reto.
+                                    </p>
+                                    <div class="h-2"></div>
+                                    <p>
+                                        Es importante destacar que la situación es compleja y en constante evolución, por lo que las
+                                        medidas que se tomen deberán adaptarse a las condiciones específicas del mercado y de la
+                                        economía venezolana.
+                                    </p>
+                                </div>
+                            </article>
+                            
+                </div>
+
+
+
+            </div>
+            <div class="flex justify-center mt-10">
+                <aside class="md:px-2 space-y-2">
+                    <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-300 dark:border-gray-400">
+                        <div class="flex justify-center">
+                            <a href="./New1.html">
+                            <img class="rounded-t-lg h-60 w-auto" src="../imagenes/Auditores ISO 001.jpg" alt="Manejo de Materiales" />
+                            </a>
+                        </div>
+                        <div class="p-5">
+                            <a href="./New1.html">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Curso de Formación y Certificación de Auditor Interno ISO 9001:2015</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-black">Dictada por Asistec Service YS, C.A. liderizada por la Ing. Juditmilex Supelano, quien es auditora certificada y cuenta con una amplia y relevante experiencia en el sector.</p>
+                            <a href="./New1.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#0079FF] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Leer más
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-300 dark:border-gray-400">
+                        <div class="flex justify-center">
+                        <a href="./New2.html">
+                            <img class="rounded-t-lg h-60 w-auto" src="../imagenes/Manejo de Materiales Peligrosos.jpg" alt="" />
+                        </a>
+                        </div>
+                        <div class="p-5">
+                            <a href="./New2.html">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Curso Seguridad en Manejo de Sustancias Peligrosas Controladas</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-black">De la mano de nuestros aliados en formación Tecum, Asesoría Integral, el Lcdo. Manaure Peña estuvo a cargo de guiar al grupo.</p>
+                            <a href="./New2.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#0079FF] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Leer más
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-300 dark:border-gray-400">
+                        <div class="flex justify-center">
+                            <a href="./New4.html">
+                                <img class="rounded-t-lg h-60 w-auto" src="../imagenes/ALIMENTOS.jpeg" alt="" />
+                            </a>
+                        </div>
+                        <div class="p-5">
+                            <a href="./New4.html">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">LLEGADA DE NUEVOS PRODUCTOS</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-black">¡Atención industria alimentaria! Llegan nuevas materias primas ideales para emplear en tu proceso productivo.</p>
+                            <a href="./New4.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#0079FF] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Leer más
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-300 dark:border-gray-400">
+                        <div class="flex justify-center">
+                            <a href="./New5.html">
+                            <img class="rounded-t-lg h-60 w-auto" src="../imagenes/aceite.jpg" alt="Manejo de Materiales" />
+                            </a>
+                        </div>
+                        <div class="p-5">
+                            <a href="./New5.html">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Curso Seguridad en Manejo de Sustancias Peligrosas Controladas</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-black">De la mano de nuestros aliados en formación Tecum, Asesoría Integral, el Lcdo. Manaure Peña estuvo a cargo de guiar al grupo.</p>
+                            <a href="./New5.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#0079FF] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Leer más
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <footer id="Contactanos" class="bg-white ">
+            <hr class="border-gray-200 sm:mx-auto dark:border-gray-700 " />
+            <div class="mx-auto w-full p-4 py-6 lg:py-8">
+                <div class="md:flex ">
+                  <div class="mb-6 md:mb-0 flex flex-grow pr-10">
+                      <a href="/src/index.html" class="items-center">
+                          <img src="../LogoGrupoNouma.jpeg" class="w-auto h-auto max-h-40" alt="LogoNouma" />
+                      </a>
+                  </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div class="text-center">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-500">Empresas</h2>
+                    <ul class="text-gray-600 dark:text-gray-600">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Química Nouma</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Nouma Trading &amp; Logistics</a>
+                        </li>
+                        <li>
+                            <a href="https://vencatalyst.com.ve" target="_blank" class="hover:underline">Vencatalyst</a>
+                        </li>
+                    </ul>
+                </div>
+                      <div class="text-center">
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-500">Contáctanos</h2>
+                          <ul class="text-gray-500 dark:text-gray-600">
+                            <li class="mb-4">
+                                <ion-icon name="call" class="text-xl"></ion-icon>
+                                <span class="text-sm">+58-412-327-2841 / +58-412-765-2493</span>
+                            </li>
+                            <li class="mb-4">
+                                <ion-icon name="mail" class="text-xl"></ion-icon>
+                                <span class="text-sm">contacto@ noumatrading.com.ve</span>
+                            </li>
+                            <li class="mb-4">
+                                <ion-icon name="locate" class="text-xl"></ion-icon>
+                                <span class="text-sm">Av prolongación Henry Ford, Urb3</span>
+                                <p class="text-sm">Industrial Las Caracaritas, Local F1-B GIS-DEPOT, 
+                                    Los Guayos- Edo. Carabobo</p>
+                            </li>
+                          </ul>
+                      </div>
+                      <div class="text-center">
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-500">Síguenos</h2>
+                          <ul class="text-gray-500 dark:text-gray-600">
+                            <li class="mb-4">
+                                <a href="https://x.com/NoumaLogistics" target="_blank" class="hover:underline">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/quimicanouma/?hl=es" target="_blank" class="hover:underline">Instagram</a>
+                            </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <div class="sm:flex sm:items-center sm:justify-between">
+                  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/src/index.html" class="hover:underline">Química Nouma</a>. J-41304784-5 Todos los Derechos Reservados.
+                  </span>
+                  <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="https://x.com/NoumaLogistics" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <ion-icon name="logo-twitter" class="text-lg"></ion-icon>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="https://www.instagram.com/quimicanouma/?hl=es" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <ion-icon name="logo-instagram" class="text-lg"></ion-icon>
+                        <span class="sr-only">Instagram page</span>
+                    </a>
+                  </div>
+              </div>
+            </div>
+        </footer>
+
+
+        <script src="../main.js"></script>
+  </body>
+
+  
+</html>

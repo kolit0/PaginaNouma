@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Noticias - Grupo Nouma</title>
+    <link rel="icon" type="image/x-icon" href="../FavIcon/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="../FavIcon/favicon.ico">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+    <body id="Inicio" class="font-[Poppins] flex flex-col">
+        <header class="bg-white overflow-hidden flex">
+            <nav class="bg-white fixed w-full z-10 top-0 start-0 border-b items-center">
+                <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4 h-28 gap-x-32 md:gap-x-48">
+                    <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="../LogoGrupoNouma.jpeg" class="w-max h-20 " alt="LogoNouma">
+                    </a>
+                    <div class="nav-links duration-500 absolute bg-white md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:top-[70%] md:w-auto  w-full flex items-center px-5 -mt-96 md:mt-0 md:left-[35%]">
+                        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 -mt-8 md:-mb-2">
+                            <li>
+                                <a class="hover:text-[#0079FF] duration-500" href="../index.html">Inicios</a>
+                            </li>
+                            <li>
+                                <a class="text-[#0079FF] duration-500" href="../News.html" target="_blank">Noticias</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-6">
+                        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="w-full h-auto z-0 md:grid md:grid-cols-5 mt-[7rem] bg-gradient-to-b from-[#4FC1E9] to-[#41B06E] py-10 px-10 gap-y-10">
+            <div class="col-span-4 md:border-r-4 border-green-700 space-y-10 bg-gray-300 rounded-r-lg rounded-l-lg border-l-4 border-l-[#0079FF]">
+                <div class="justify-center flex md:pl-36 pt-3 flex-col">
+                    <h1 class="md:text-6xl text-3xl text-black font-extrabold">LLEGADA DE NUEVOS PRODUCTOS</h1>
+                    <div class="size-5"></div>
+                    <h3 class="text-black font-semibold">¡Atención industria alimentaria! Llegan nuevas materias primas ideales para emplear en tu proceso productivo.</h3>
+                </div>
+                <div class="grid xl:grid-cols-2 gap-y-10">   
+                    <div class="flex md:pl-10">
+                            <img class="rounded-lg md:max-h-[50rem] h-auto w-auto" src="../imagenes/ALIMENTOS.jpeg" alt="image description">
+                    </div>
+                    <div class="h-auto w-auto">  
+                        <article class="max-md:px-2 md:text-lg text-black text-justify md:mx-20">
+                            En esta sección, nos complace ser los primeros en
+                            informarles sobre la llegada de estas materias
+                            primas con excelente rendimientos y a los
+                            precios más competitivos del mercado:
+                        </article>
+                        <div class="h-5"></div>
+                            <ul class="md:list-outside list-inside list-decimal max-md:px-2 md:text-lg text-black text-justify md:mx-20 space-y-4">
+                                <li>
+                                    Maltodextrina: Es espesante, secante,
+                                    estabilizante, aglutinante o apelmazante.
+                                     También se utiliza como conservante
+                                    para aumentar la vida útil de los
+                                    alimentos envasados.
+                                    <ul class="md:list-outside list-inside list-disc max-md:px-2 md:text-lg text-black text-justify md:mx-20">
+                                        <li>
+                                            La presentación: Saco de 25 kg
+                                        </li>
+                                        <li>
+                                            Origen: China
+                                        </li>
+                                        <li>
+                                            Mes de llegada: Julio 2024
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Lactato de Sodio: Es una sal sódica del ácido láctico que se usa como
+                                    ingrediente en la industria alimentaria.  Posee propiedades que regulan la
+                                    acidez, emulsionan, humectan, espesan y estabilizan los productos.
+                                    <ul class="md:list-outside list-inside list-disc max-md:px-2 md:text-lg text-black text-justify md:mx-20">
+                                        <li>
+                                            La presentación: Carboya de 25 kg
+                                        </li>
+                                        <li>
+                                            Origen: China
+                                        </li>
+                                        <li>
+                                            Mes de llegada: Julio 2024
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Polidextrosa: Es un ingrediente alimentario multifuncional que se emplea como
+                                    sustituto del azúcar, grasas y calorías, y aumenta el contenido en fibra de los
+                                    alimentos. También se usa como estabilizante y espesante, y ayuda a mantener el
+                                    grado óptimo de humedad en un alimento.
+                                    <ul class="md:list-outside list-inside list-disc max-md:px-2 md:text-lg text-black text-justify md:mx-20">
+                                        <li>
+                                            La presentación: Saco de 25 kg
+                                        </li>
+                                        <li>
+                                            Origen: China
+                                        </li>
+                                        <li>
+                                            Mes de llegada: Agosto 2024
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Ácido Ascórbico: También conocido como Vitamina C, Se emplea en la elaboración
+                                    de diversos productos tales como: Jugos de fruta, Cereales, Caramelos, Frutos
+                                    secos, Gelatinas, entre otros
+                                    <ul class="md:list-outside list-inside list-disc max-md:px-2 md:text-lg text-black text-justify md:mx-20">
+                                        <li>
+                                            La presentación: Saco de 25 kg
+                                        </li>
+                                        <li>
+                                            Origen: China
+                                        </li>
+                                        <li>
+                                            Mes de llegada: Agosto 2024
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>                       
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center mt-10">
+                <aside class="md:px-2 space-y-2">
+                    <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-300 dark:border-gray-400">
+                        <div class="flex justify-center">
+                            <a href="./New1.html">
+                            <img class="rounded-t-lg h-60 w-auto" src="../imagenes/Auditores ISO 001.jpg" alt="Manejo de Materiales" />
+                            </a>
+                        </div>
+                        <div class="p-5">
+                            <a href="./New1.html">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Curso de Formación y Certificación de Auditor Interno ISO 9001:2015</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-black">Dictada por Asistec Service YS, C.A. liderizada por la Ing. Juditmilex Supelano, quien es auditora certificada y cuenta con una amplia y relevante experiencia en el sector.</p>
+                            <a href="./New1.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#0079FF] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Leer más
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-300 dark:border-gray-400">
+                        <div class="flex justify-center">
+                        <a href="./New2.html">
+                            <img class="rounded-t-lg h-60 w-auto" src="../imagenes/Manejo de Materiales Peligrosos.jpg" alt="" />
+                        </a>
+                        </div>
+                        <div class="p-5">
+                            <a href="./New2.html">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Curso Seguridad en Manejo de Sustancias Peligrosas Controladas</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-black">De la mano de nuestros aliados en formación Tecum, Asesoría Integral, el Lcdo. Manaure Peña estuvo a cargo de guiar al grupo.</p>
+                            <a href="./New2.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#0079FF] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Leer más
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-300 dark:border-gray-400">
+                        <div class="flex justify-center">
+                            <a href="./New3.html">
+                                <img class="rounded-t-lg h-60 w-auto" src="../imagenes/BUQUE.jpeg" alt="" />
+                            </a>
+                        </div>
+                        <div class="p-5">
+                            <a href="./New3.html">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">IMPACTO EN EL COSTO DE FLETES DESDE ASIA HACIA VENEZUELA</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-black">El aumento de los costos de flete marítimo desde China: Un desafío para la importación en Venezuela</p>
+                            <a href="./New3.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#0079FF] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Leer más
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-sm h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-300 dark:border-gray-400">
+                        <div class="flex justify-center">
+                            <a href="./New5.html">
+                            <img class="rounded-t-lg h-60 w-auto" src="../imagenes/aceite.jpg" alt="Manejo de Materiales" />
+                            </a>
+                        </div>
+                        <div class="p-5">
+                            <a href="./New5.html">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Curso Seguridad en Manejo de Sustancias Peligrosas Controladas</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-black">De la mano de nuestros aliados en formación Tecum, Asesoría Integral, el Lcdo. Manaure Peña estuvo a cargo de guiar al grupo.</p>
+                            <a href="./New5.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#0079FF] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Leer más
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <footer id="Contactanos" class="bg-white ">
+            <hr class="border-gray-200 sm:mx-auto dark:border-gray-700 " />
+            <div class="mx-auto w-full p-4 py-6 lg:py-8">
+                <div class="md:flex ">
+                  <div class="mb-6 md:mb-0 flex flex-grow pr-10">
+                      <a href="/src/index.html" class="items-center">
+                          <img src="../LogoGrupoNouma.jpeg" class="w-auto h-auto max-h-40" alt="LogoNouma" />
+                      </a>
+                  </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div class="text-center">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-500">Empresas</h2>
+                    <ul class="text-gray-600 dark:text-gray-600">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Química Nouma</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Nouma Trading &amp; Logistics</a>
+                        </li>
+                        <li>
+                            <a href="https://vencatalyst.com.ve" target="_blank" class="hover:underline">Vencatalyst</a>
+                        </li>
+                    </ul>
+                </div>
+                      <div class="text-center">
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-500">Contáctanos</h2>
+                          <ul class="text-gray-500 dark:text-gray-600">
+                            <li class="mb-4">
+                                <ion-icon name="call" class="text-xl"></ion-icon>
+                                <span class="text-sm">+58-412-327-2841 / +58-412-765-2493</span>
+                            </li>
+                            <li class="mb-4">
+                                <ion-icon name="mail" class="text-xl"></ion-icon>
+                                <span class="text-sm">contacto@ noumatrading.com.ve</span>
+                            </li>
+                            <li class="mb-4">
+                                <ion-icon name="locate" class="text-xl"></ion-icon>
+                                <span class="text-sm">Av prolongación Henry Ford, Urb3</span>
+                                <p class="text-sm">Industrial Las Caracaritas, Local F1-B GIS-DEPOT, 
+                                    Los Guayos- Edo. Carabobo</p>
+                            </li>
+                          </ul>
+                      </div>
+                      <div class="text-center">
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-gray-500">Síguenos</h2>
+                          <ul class="text-gray-500 dark:text-gray-600">
+                            <li class="mb-4">
+                                <a href="https://x.com/NoumaLogistics" target="_blank" class="hover:underline">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/quimicanouma/?hl=es" target="_blank" class="hover:underline">Instagram</a>
+                            </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <div class="sm:flex sm:items-center sm:justify-between">
+                  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/src/index.html" class="hover:underline">Química Nouma</a>. J-41304784-5 Todos los Derechos Reservados.
+                  </span>
+                  <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="https://x.com/NoumaLogistics" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <ion-icon name="logo-twitter" class="text-lg"></ion-icon>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="https://www.instagram.com/quimicanouma/?hl=es" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <ion-icon name="logo-instagram" class="text-lg"></ion-icon>
+                        <span class="sr-only">Instagram page</span>
+                    </a>
+                  </div>
+              </div>
+            </div>
+        </footer>
+
+
+        <script src="../main.js"></script>
+  </body>
+
+  
+</html>
